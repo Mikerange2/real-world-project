@@ -71,7 +71,7 @@ main {
     font-weight: 500;
     color: #7c8ba1;
     line-height: 1.625;
-    text-align: center;
+    
 }
 
 
@@ -379,6 +379,8 @@ QUALITY WORK ↓
     color: #243e63;
     font: 16px;
     padding: 0px 48px 0px 0px;
+    width: 50%;
+    max-width: 576px;
 }
 .btn {
     color: white;
@@ -395,6 +397,16 @@ QUALITY WORK ↓
 .quality__img {
     z-index: 1;
 }
+.quality__img--wrapper {
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
+    position: relative;
+    margin: 0 56px;
+    z-index: 2;
+    display: flex;
+    width: 50%;
+}
+
 .quality__grid {
     transform: translateX(50%)scaleX(1)scaleY(1);
     width: 80px;
@@ -402,7 +414,7 @@ QUALITY WORK ↓
     position: absolute;
     right: 0px;
     bottom: 0px;
-    fill: rgb(100, 21, 255, var(--tw-text-opacity));
+    fill: #6415ff;
     z-index: 0;
     display: block;
 }
@@ -504,7 +516,6 @@ MOBILE RESPONSIVENESS ↓
     
     .header__description--para {
         font-size: 16px;
-        margin: 20px 0;
     }
 }
 
@@ -519,6 +530,13 @@ MOBILE RESPONSIVENESS ↓
     }
     footer {
         padding: 80px 32px;
+    }
+    .quality__discription {
+        margin: 0;
+        padding-right: 48px;
+    }
+    .section__para {
+        font-size: 16px;
     }
 }
 
