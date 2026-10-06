@@ -143,10 +143,26 @@ nav {
   position: relative;
   transition: all 300ms ease;
   margin: 0 24px;
+  text-decoration: none;
 }
 
 .nav__link--primary:hover {
   background-color: rgb(60, 13, 153);
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+}
+.nav__link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #6415ff;
+    transition: all 300ms ease;
+    opacity: 0;
 }
 
 .btn__menu {
@@ -1282,6 +1298,3 @@ MOBILE RESPONSIVENESS ↓
 }
 
 
-.test {
-  color: black;
-}
